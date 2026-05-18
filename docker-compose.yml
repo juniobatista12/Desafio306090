@@ -6,8 +6,7 @@ services:
       - 11311:11311
 
   database:
-    image: postgres:13
-    container_name: liferay-postgres
+    image: postgres:15-alpine
     environment:
       POSTGRES_DB: lportal
       POSTGRES_USER: liferay

@@ -27,6 +27,7 @@ ADD . /liferay
 RUN blade server init
 
 COPY portal-ext.properties /liferay/bundles
+COPY com.liferay.portal.search.elasticsearch7.configuration.ElasticsearchConfiguration.config /liferay/bundles/osgi/configs/com.liferay.portal.search.elasticsearch7.configuration.ElasticsearchConfiguration.config
 
 #RUN blade gw deploy
 

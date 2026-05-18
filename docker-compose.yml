@@ -4,6 +4,9 @@ services:
     ports:
       - 8080:8080
       - 11311:11311
+    depends_on:
+      - database
+      - elasticsearch
 
   database:
     image: postgres:15-alpine
